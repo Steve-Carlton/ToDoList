@@ -25,11 +25,12 @@
 <script>
 
   let newTask = document.querySelector("#addNewTask");
-  let listItem = document.createElement("LI");
+
 
   const taskList = document.querySelector("#taskList");
 
   function addTask() {
+    let listItem = document.createElement("LI");
     userInput = newTask.value;
     listItem.innerHTML = userInput;
     taskList.appendChild(listItem);
