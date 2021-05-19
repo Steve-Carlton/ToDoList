@@ -31,9 +31,8 @@
 
   function addTask() {
     userInput = newTask.value;
-    console.log(userInput);
     listItem.innerHTML = userInput;
-    listItem.appendChild(taskList);
+    taskList.appendChild(listItem);
   }
   //assign listItem value to addNewTask
   //append taskList with listItem.
