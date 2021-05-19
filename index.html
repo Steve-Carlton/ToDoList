@@ -7,19 +7,28 @@
   </head>
   <body>
     <h1>To Do List</h1>
+    <hr>
     <section>
-      <label for="addNewTask">Add New Task:</label><br>
+      <label for="addNewTask">Add New Task:</label>
+      <br>
       <input type="text" name="" id="addNewTask" value="">
-      <button type="button" name="button">Add Task</button>
+      <br>
+      <button type="button" name="button" onclick="addTask()">Add Task</button>
     </section>
     <hr>
     <section>
       <h2>Task List</h2>
-      <ul>
-        <li></li>
+      <ul id="taskList">
       </ul>
     </section>
 
+<script>
+  const getList = document.querySelector("#taskList");
+  function addTask() {
+    console.log("click");
+  }
+
+</script>
   <!-- <script src="./scripts.js"></script> -->
   </body>
 </html>
