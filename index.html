@@ -25,19 +25,30 @@
 <script>
 
   let newTask = document.querySelector("#addNewTask");
-
-
+  let listItem;
+  let listItemAttrb;
   const taskList = document.querySelector("#taskList");
 
+
+
   function addTask() {
-    let listItem = document.createElement("LI");
+    listItem = document.createElement("LI");
+    listItem.addEventListener("click", function completeTask() {
+        listItem.classList.toggle("red");
+      });
     userInput = newTask.value;
     listItem.innerHTML = userInput;
     taskList.appendChild(listItem);
   }
-  //assign listItem value to addNewTask
-  //append taskList with listItem.
 
+
+//visually indicate completed task items
+
+
+
+
+
+//delete task items
 
 </script>
   <!-- <script src="./scripts.js"></script> -->
