@@ -3,5 +3,6 @@ li:hover {
 }
 
 .red {
-  color:red;
+  color:grey;
+  text-decoration: line-through;
 }
