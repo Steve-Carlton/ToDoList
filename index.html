@@ -34,7 +34,7 @@
   function addTask() {
     listItem = document.createElement("LI");
     listItem.addEventListener("click", function completeTask() {
-        listItem.classList.toggle("red");
+        listItem.classList.toggle("taskComplete");
       });
     userInput = newTask.value;
     listItem.innerHTML = userInput;

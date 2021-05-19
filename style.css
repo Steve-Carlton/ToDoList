@@ -2,7 +2,7 @@ li:hover {
   cursor: pointer;
 }
 
-.red {
+.taskComplete {
   color:grey;
   text-decoration: line-through;
 }
