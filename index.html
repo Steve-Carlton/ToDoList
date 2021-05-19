@@ -11,7 +11,7 @@
     <section>
       <label for="addNewTask">Add New Task:</label>
       <br>
-      <input type="text" name="" id="addNewTask" value="">
+      <input type="text" name="" id="addNewTask" placeholder="Type here...">
       <br>
       <button type="button" name="button" onclick="addTask()">Add Task</button>
     </section>
@@ -23,10 +23,21 @@
     </section>
 
 <script>
-  const getList = document.querySelector("#taskList");
+
+  let newTask = document.querySelector("#addNewTask");
+  let listItem = document.createElement("LI");
+
+  const taskList = document.querySelector("#taskList");
+
   function addTask() {
-    console.log("click");
+    userInput = newTask.value;
+    console.log(userInput);
+    listItem.innerHTML = userInput;
+    listItem.appendChild(taskList);
   }
+  //assign listItem value to addNewTask
+  //append taskList with listItem.
+
 
 </script>
   <!-- <script src="./scripts.js"></script> -->
